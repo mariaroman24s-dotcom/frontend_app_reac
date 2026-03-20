@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { registrarUsuario } from "../services/api";
+import { Link } from "react-router-dom";
 
 export default function Registro(){
 
@@ -85,9 +86,9 @@ Registrarse
 
 <p className="text-center mt-4 text-gray-600">
 ¿Ya tienes cuenta?
-<a href="/.." className="text-green-600 ml-1 font-semibold hover:underline">
+<Link to="/" className="text-green-600 ml-1 font-semibold hover:underline">
 Inicia sesión
-</a>
+</Link>
 </p>
 
 </form>

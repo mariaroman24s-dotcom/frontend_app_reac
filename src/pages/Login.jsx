@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUsuario } from "../services/api";
+import { Link } from "react-router-dom";
 
 export default function Login(){
 
@@ -59,9 +60,9 @@ Entrar
 
 <p className="text-center mt-4 text-gray-600">
 ¿No tienes cuenta?
-<a href="/registro" className="text-green-600 ml-1 font-semibold hover:underline">
+<Link to="/registro" className="text-green-600 ml-1 font-semibold hover:underline">
 Registrate
-</a>
+</Link>
 </p>
 
 </form>
