@@ -70,7 +70,7 @@ const actualizarReceta = async (e) => {
 
   e.preventDefault();
 
-  await fetch(`http://localhost:3000/recetas/actualizar/${recetaSeleccionada.id_receta}`, {
+  await fetch(`https://backend-app-react.onrender.com/recetas/actualizar/${recetaSeleccionada.id_receta}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"

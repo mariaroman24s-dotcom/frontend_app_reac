@@ -71,7 +71,7 @@ const actualizarPostre = async (e) => {
 
   e.preventDefault();
 
-  await fetch(`http://localhost:3000/postres/actualizar/${postreSeleccionado.id_postre}`, {
+  await fetch(`https://backend-app-react.onrender.com/postres/actualizar/${postreSeleccionado.id_postre}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"
